@@ -21,7 +21,9 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.className} antialiased`}>
+      <body
+        className={`${poppins.className} antialiased h-screen flex flex-col`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
